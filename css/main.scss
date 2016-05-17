@@ -34,6 +34,7 @@ span{
 	background: url("../image/image2.jpg");	
 	 background-size: cover;
 	 height: 600px;
+	 margin-bottom: 30px;
 }
 .etiqueta{
 	background:$color-black;
@@ -44,6 +45,7 @@ span{
 }
 .letter-hero{
     font-size: 70px;
+    font-weight: bold;
 }
 .listmenu li{
 	color: $color-white;
@@ -72,5 +74,21 @@ footer{
 @media(max-width: 1200px){
 .esconder{
 	display:none;
+}
+}
+@media(max-width: 1200px){
+.etiqueta{
+	background:$color-black;
+	padding:20px;
+	max-width: 80%;
+	position: relative;
+	top:150px;
+}
+.letter-hero{
+    font-size: 50px;
+    font-weight: bold;
+}
+.etiqueta>p{
+	font-size:15px;
 }
 }
