@@ -1,5 +1,76 @@
-$font-family:"Courgette", sans-serif;
-@import "main"
+$font-principal:"Courgette", sans-serif;
+$font-secundaria:sans-serif;
+$color-white: #fff;
+$color-yellow: #ffb84d;
+$color-back:#333;  
+$color-black:#000;
+$text-align:center;
 body{
-	font-family:$font-family;
+	background:$color-back;
+	font-family:$font-principal
+}
+p{
+	color:$color-white;
+	font-size:15px;
+	font-family:$font-secundaria;
+}
+h1,h2,h3,h4,h5,h6{
+	color:$color-yellow;
+	text-align:$text-align;
+}
+i{
+ color:$color-white;
+ font-size:30px;
+ border-radius: 50%;
+}
+span{
+	color:$color-white;
+}
+.header{
+	font-size:45px;
+	background:$color-black;
+}
+.hero{
+	background: url("../image/image2.jpg");	
+	 background-size: cover;
+	 height: 600px;
+}
+.etiqueta{
+	background:$color-black;
+	padding:35px;
+	max-width: 50%;
+	position: relative;
+	top:150px;
+}
+.letter-hero{
+    font-size: 70px;
+}
+.listmenu li{
+	color: $color-white;
+	font-size:18px;
+	font-family:$font-secundaria;
+	padding-top: 30px;
+}
+.listmenu li a{
+	text-decoration:none;
+	color:$color-white
+}
+.listmenu li a:hover{
+	color:$color-yellow;
+	font-size:16px;
+}
+.caption p{
+	color:$color-black;
+}
+
+footer{
+	background:$color-black;
+	padding:30px;
+	font-family:$font-secundaria;
+	color:$color-white;
+}
+@media(max-width: 1200px){
+.esconder{
+	display:none;
+}
 }
