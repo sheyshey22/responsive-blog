@@ -1,0 +1,67 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - main.scss
+
+Backtrace:
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+*{outline:1px solid rgba(255,0,0,1);}
+
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+C:/Ruby22/bin/sass:23:in `load'
+C:/Ruby22/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: ""; }
+html, body {
+  background: #fff;
+}
+.slideshow {
+  width: 60em;
+  margin: 2em auto;
+  text-align: center;
+}
+.slideshow ul {
+  background: #333;
+  display: inline-block;
+  list-style: none outside none;
+  margin: 0;
+  padding: 1em 0;
+  width: 60em;
+}
+.slideshow li {
+  display: inline-block;
+  zoom: 1;
+  background: none repeat scroll 0 0 #FFFFFF;
+  margin: .4em;
+  padding: .20em;
+}
+.slideshow li.active, .slideshow li:hover {
+  cursor: pointer;
+  background: none repeat scroll 0 0 #fff;
+}
+.slideshow li img {
+  margin: .25em;
+  width: 18em;
+  height: 13em;
+}
+.slideshow .img-lg {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.slideshow .img-lg img {
+  display: block;
+  width: 60em;
+  height: auto;
+}
